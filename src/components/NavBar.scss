@@ -1,0 +1,27 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    .logo{
+        font-family: 'JMH Typewriter Sans', sans-serif;
+    }
+    .navLinks{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        text-decoration: none;
+        // no list style
+        list-style: none;
+        .navLink{
+            color: black;
+            font-weight: 600;
+            font-size: 1.2rem;
+            &:hover{
+                color: #ff0000;
+                cursor: pointer;
+            }
+        }
+    }
+}

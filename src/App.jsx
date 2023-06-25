@@ -1,12 +1,13 @@
 import './App.scss'
 import NavBar from './components/NavBar.jsx'
+import SectionHeader from './components/SectionHeader.jsx'
 
-function App() {
-
+const App = () => {
   return (
     <>
-      <h1>Interior Karo</h1>
       <NavBar />
+      <SectionHeader heading="Our Affiliates!" />
+      <SectionHeader heading="Our Workflow Wizardry !" />
     </>
   )
 }

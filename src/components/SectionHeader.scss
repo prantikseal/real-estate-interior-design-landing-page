@@ -1,0 +1,38 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span.border {
+      border: 1px solid blue;
+      width: 40%;
+      margin: 2rem 4rem;
+      animation: border-anim 3.5s ;
+    }
+  
+    .typewriter h2 { 
+      white-space: nowrap;   
+      margin: 0 auto;
+      text-align: center;  
+      width: fit-content;
+      animation: typing 3.5s steps(10, end);
+      overflow: hidden;
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0; 
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes border-anim {
+    0% {
+      width: 40%;  
+    }
+    100% {
+      width: 100%;
+    }
+  }
