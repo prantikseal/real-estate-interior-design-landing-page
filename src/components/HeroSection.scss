@@ -1,0 +1,61 @@
+.heroSection{
+    height: 100vh;
+    width: 100%;
+    background-image: url('./hero-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    .heroSectionContent{
+      margin-left: 3rem;
+      margin-top: 3rem;
+      .primaryHeading{
+        color: #FFF;
+        font-size: 2.25rem;
+        font-family: JMH Typewriter Sans, sans-serif;
+        font-weight: 250;
+        opacity: 0.75;
+      }
+      .animatedHeading{
+        font-family: 'GuldScript', sans-serif;
+        color: #1256FF;
+        font-size: 6rem;
+        font-weight: 500;
+        animation: move-up 3s ease-in-out infinite;
+      }
+      .ctaSection{
+        margin-top: 19rem;
+      }
+      a{
+        text-decoration: none;
+        color: #FFF;
+        font-size: 1.25rem;
+        font-weight: 500;   
+        padding: 0.8rem 1.62rem;
+        border-radius: 10px;
+        background: #07071E;
+      }
+    }
+}
+
+
+@keyframes move-up {  
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  // have bounce effect
+  60% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+

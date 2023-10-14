@@ -1,0 +1,34 @@
+.our-affliates-section__nri{
+    display: flex;
+    margin: 2rem 8rem;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 768px){
+        flex-direction: column;
+        margin: 2rem 0rem;
+    }
+    .our-affliates-section__nri__content{
+        margin-left: 5rem;
+        @media only screen and (max-width: 768px){
+            margin: 4rem;
+        }
+        h3{
+            color: #243C76;
+            font-size: 2.5rem;
+            font-family: Archivo;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 1.75rem;
+        }
+        p{
+            color: rgba(7, 7, 30, 0.90);
+            text-align: justify;
+            font-size: 1rem;
+            font-family: Archivo;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

@@ -1,14 +1,22 @@
 import './App.scss'
-import NavBar from './components/NavBar.jsx'
+import HeroSection from './components/HeroSection'
+import OurAffliatesSection from './components/OurAffliatesSection'
 import SectionHeader from './components/SectionHeader.jsx'
+import WhyChooseUs from './components/WhyChooseUs'
+import WorkflowWizadry from './components/WorkflowWizadry'
+import ZingersSection from './components/ZingersSection'
+import InteriorSection from './components/InteriorSection'
 
 const App = () => {
   return (
-    <>
-      <NavBar />
-      <SectionHeader heading="Our Affiliates!" />
-      <SectionHeader heading="Our Workflow Wizardry !" />
-    </>
+    <div className="app">
+      <HeroSection />
+      <WhyChooseUs />
+      <ZingersSection />
+      <WorkflowWizadry />
+      <InteriorSection />
+      <OurAffliatesSection />
+    </div>
   )
 }
 

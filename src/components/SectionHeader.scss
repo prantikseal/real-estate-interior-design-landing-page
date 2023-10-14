@@ -1,38 +1,48 @@
 .section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    span.border {
-      border: 1px solid blue;
-      width: 40%;
-      margin: 2rem 4rem;
-      animation: border-anim 3.5s ;
-    }
-  
-    .typewriter h2 { 
-      white-space: nowrap;   
-      margin: 0 auto;
-      text-align: center;  
-      width: fit-content;
-      animation: typing 3.5s steps(10, end);
-      overflow: hidden;
-    }
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0; 
-    }
-    to {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span.border {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 40%;
+    margin: 2rem 2rem;
+    animation: border-anim 3.5s;
+    @media (max-width: 1200px){
       width: 100%;
+      margin: 2rem 0;
+      overflow-x: hidden;
     }
   }
-  
-  @keyframes border-anim {
-    0% {
-      width: 40%;  
-    }
-    100% {
-      width: 100%;
-    }
+
+  .typewriter h2 {
+    font-size: 2rem;
+    font-family: Archivo;
+    font-weight: 500;
+    color: #1256ff;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+    // animation: typing 3.5s steps(10, end);
+    animation: typing 10s steps(20, end) infinite;
+    overflow: hidden;
   }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 110%;
+  }
+}
+
+@keyframes border-anim {
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 100%;
+  }
+}
